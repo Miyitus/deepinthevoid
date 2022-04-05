@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+
+ul {
+	min-height: 0; /* without min-height/height:0 flex:1 doesn't work */
+	flex: 1;
+	overflow: auto; 
+}
+
+
+/* --------------------------------------- */
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/*background: hsl(0,0%,90%);*/
+}
+
+li {
+	padding-top: 100px;
+	padding-right: 0px;
+	padding-bottom: 100px;
+	padding-left: 0px;
+	height: 200px;
+	width: 100px;
+}
+
+li:nth-child(odd) { /*background: hsl(0,0%,95%);*/ }
+
+header, footer { padding: 20px; /*background: hsl(0,0%,70%);*/ }
+
+.bodys {
+	height: 100%;
+	background: #2b2a2b;
+	padding: 0px;
+	margin:0px;
+	/*background: hsl(0,0%,80%);*/
+}
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'fontawesome', sans-serif;
+}
+
+
+
+a, a:visited {
+  color: #4099FF;
+  text-decoration: none;
+}
+
+.wrapper {
+  color: #555;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  font-style, font-weight, letter-spacing, line-height, word-spacing: normal;
+
+  margin: 50px auto;
+  width: 375px;
+  height: 125px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ddd;
+  overflow: hidden;
+}
+
+img {
+  float: left;
+  width: 125px;
+  height: 125px;
+  border-right: 1px solid #eee;
+}
+
+article {
+  float: right;
+  padding: 14px 14px 20px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  margin: 1px 0 7px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+nav {
+  float: right;
+  margin: 14px;
+  width: 100%;
+}
+
+nav ul li {
+  float: right;
+  display: inline-block;
+}
+
+nav ul li a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+}
+
+nav ul li .fontawesome-retweet, nav ul li .fontawesome-reply {
+  color: #aaa;
+}
+
+nav ul li .fontawesome-star {
+  color: #4099FF;
+}
+
+nav li.time {
+  float: left;
+  *color: #aaa;
+}
+
+html { height: 100%; }
